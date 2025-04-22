@@ -44,7 +44,7 @@ export async function GET(req: NextRequest) {
 
   // Define constant wages and cap for dividends
   const wages = 417.0;
-  const dividendsCap = 4000.0;
+  const dividendsCap = 3813.0;
 
   // Check if earnings are too low to use the calculator
   if (finalEarnings < wages) {
