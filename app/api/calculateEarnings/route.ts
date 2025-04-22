@@ -58,10 +58,10 @@ export async function GET(req: NextRequest) {
   let message;
   let dividends;
   if (finalEarnings >= dividendsCap) {
-    message = "The earnings after deduction are above 4000.";
+    message = "The earnings after deduction are above the threshold.";
     dividends = dividendsCap - wages; // Dividends are capped at 4000 - wages
   } else {
-    message = "The earnings after deduction are below 4000.";
+    message = "The earnings after deduction are below the threshold.";
     dividends = finalEarnings - wages; // Remaining amount after wages
   }
 
